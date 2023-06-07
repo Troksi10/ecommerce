@@ -14,7 +14,9 @@ const Product = ({ id, title, price, rating, image }) => {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>⭐</p>
+              <li key={Math.random()}>
+                <p>⭐</p>
+              </li>
             ))}
         </div>
       </div>
